@@ -1,0 +1,15 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main() {
+    ofstream outfile("binaryFile.bin", ios::binary);
+
+    int data[] = { 0x12, 0x34, 0x56, 0x78 };
+    outfile.write(reinterpret_cast<const char*>(&data), sizeof(data));
+
+    outfile.close();
+
+    return 0;
+}
