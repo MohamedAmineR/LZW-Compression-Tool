@@ -14,15 +14,15 @@ The input file format is a text file containing ASCII-encoded characters. The fi
 Output File Format
 The output file format is a binary file containing the compressed data. The compressed data consists of a sequence of variable-length codes representing substrings from the input sequence. The codes are encoded as 12-bit integers and are stored in little-endian byte order.
 
-User Interface
-The program is run from the command line with the following syntax:
 
-
-lzw-compress <input-file> <output-file>
-
-Where <input-file> is the path to the input file and <output-file> is the path to the output file.
 
 Upon running the program, the user will see a status message indicating the progress of the compression process. The program will then exit with a status code indicating success or failure.
+
+
+Possible Improvements
+Compress other files types
+Refine a user interface
+
 
 Conclusion
 This is a basic outline of the LZW compression program, including its structure, input and output file formats, and user interface. More detailed design specifications, implementation details, and error handling may be needed to create a complete and robust program.
